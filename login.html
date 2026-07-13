@@ -1,95 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, Helvetica, sans-serif;
-    }
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-    body{
-      background:linear-gradient(135deg,#4facfe,#00f2fe);
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            background:linear-gradient(135deg,#4facfe,#00c6ff);
+        }
 
-    .login-box{
-      width:350px;
-      background:#fff;
-      padding:40px 30px;
-      border-radius:12px;
-      text-align:center;
-      box-shadow:0 10px 25px rgba(0,0,0,0.2);
-    }
+        .login-container{
+            width:350px;
+            background:#fff;
+            padding:35px;
+            border-radius:12px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            text-align:center;
+        }
 
-    .logo{
-      width:80px;
-      height:80px;
-      margin:0 auto 20px;
-      border-radius:50%;
-      background:#4facfe;
-      color:white;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      font-size:32px;
-      font-weight:bold;
-    }
+        .logo{
+            width:100px;
+            margin:0 auto 20px;
+        }
 
-    h2{
-      margin-bottom:20px;
-      color:#333;
-    }
+        .logo img{
+            width:100%;
+            height:auto;
+        }
 
-    input{
-      width:100%;
-      padding:12px;
-      margin:10px 0;
-      border:1px solid #ccc;
-      border-radius:6px;
-      font-size:16px;
-    }
+        h2{
+            margin-bottom:20px;
+            color:#333;
+        }
 
-    button{
-      width:100%;
-      padding:12px;
-      margin-top:15px;
-      border:none;
-      border-radius:6px;
-      background:#4facfe;
-      color:white;
-      font-size:16px;
-      cursor:pointer;
-      transition:0.3s;
-    }
+        input{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:16px;
+        }
 
-    button:hover{
-      background:#2f8df5;
-    }
-  </style>
+        button{
+            width:100%;
+            padding:12px;
+            margin-top:15px;
+            border:none;
+            border-radius:6px;
+            background:#007BFF;
+            color:#fff;
+            font-size:16px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0056b3;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="login-box">
-    <div class="logo">L</div>
+<div class="login-container">
+
+    <!-- Logo Image -->
+    <div class="logo">
+        <img src="klnce logo.jpeg" alt="Company Logo">
+    </div>
 
     <h2>Login</h2>
 
     <form>
-      <input type="text" placeholder="Username" required>
-      <input type="password" placeholder="Password" required>
+        <input type="text" placeholder="Username" required>
 
-      <button type="submit">Login</button>
+        <input type="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
     </form>
-  </div>
+
+</div>
 
 </body>
 </html>
